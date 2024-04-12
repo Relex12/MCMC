@@ -14,7 +14,11 @@ filepath = "liste.de.mots.francais.frgut.txt"
 
 whole_dico = ""
 with codecs.open(filepath, "r", "utf-8") as lines:
-    for l in  lines:
+    # total = len(lines)
+    # i = 1
+    for l in lines:
+        # progress_bar(count=i,total=total)
+        # i = i+1
         whole_dico += l[:-1] + " "
         
 dico = transform_to_caps(whole_dico)

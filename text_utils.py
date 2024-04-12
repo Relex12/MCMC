@@ -4,7 +4,8 @@
 import codecs
 import re
 import numpy as np
-import matplotlib.pyplot as plt
+# do not work, freeze or infinite loop like
+# import matplotlib.pyplot as plt
 import codecs
 import pickle
 
@@ -31,7 +32,6 @@ def invert_code(code):
         j = code.index(i)
         res[i] = j
     return res
-
 
 def transform_to_caps(s):
     # Substitution "oe"

@@ -8,7 +8,7 @@ import pickle
 # =============================================================================
 
 # CREATE BRIGRAMS (needed only the first time)
-COUNT_BIGRAMS = True
+COUNT_BIGRAMS = False
 
 corpus_filename = "swann.txt"
 bigrams_filename = "bigrams.dat"
@@ -16,7 +16,7 @@ bigrams_filename = "bigrams.dat"
 if COUNT_BIGRAMS:
     corpus = load_corpus(corpus_filename)
     corpus = transform_to_caps(corpus)    
-    count_bigrams(corpus, bigrams_filename, "bigrams.png")
+    # count_bigrams(corpus, bigrams_filename, "bigrams.png")
 
 # =============================================================================
     
@@ -55,7 +55,10 @@ def permute_code(code,i,j):
 # Text to compute frequency of letter for initial guess
 freq_text = transform_to_caps(load_corpus("swann.txt"))
 
-ciphered_text = "Ci kmvjpx vb ci wmoxi"
+# ciphered_text = "Ci kmvjpx vb ci wmoxi"
+# ciphered_text = "abdcefabe dghibhfe jegibkbe"
+# ciphered_text = "ltewkoltk egfmtfok hkgmtutk"
+ciphered_text = "ltewkoltk egfmtfok hkgmtutk lmamwt dtrteof kthmost modort xotos igddt azts fgwfgwkl lasst xoxafmt oddgkmasomt"
 
 # =============================================================================
 # =============================================================================
@@ -179,7 +182,7 @@ for k in range(MAX_ITER):
 print("\nEnter second phase")      
 
 
-with open('dictionnary.dat', 'rb') as filehandle:
+with open('dictionnary.data', 'rb') as filehandle:
     dictionnary_words = pickle.load(filehandle)          
 
 cnt, total = count_correct_words(best_trad, dictionnary_words) 

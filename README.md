@@ -1,3 +1,7 @@
+>   Attention: ce repo est copié collé [ce repo](https://github.com/scienceetonnante/MCMC), des fichiers ont été ajoutés ou modifiés, mais le code n'est pas à un point stable et son exécution peut produire une erreur.
+>
+>   Certains fichiers ne devraient pas être suivis par Git, mais il n'est pas certain de pouvoir les reproduire, ils ont donc été conservés et doivent être supprimés lorsque ce repo est retravaillé.
+
 # Decipher using Markov Chain Monte Carlo
 
 Code used in my Youtube video : https://www.youtube.com/watch?v=z4tkHuWZbRA
